@@ -1,0 +1,16 @@
+---
+layout: post
+title: So It Goes
+date: 2020-11-15 15:00:00 +0800
+description: Introductory post for the So It Goes blog. # Add post description (optional)
+img: clouds-1280.jpg # Add image post (optional)
+fig-caption: # Add figcaption (optional)
+tags: [Blog]
+---
+I am a Cloud Solution Architect at Microsoft. In that role I help customers be successful in their use of Microsoft Azure. The technologies I am mainly focused on are the core infrastructure services: Compute, Storage and Networking.
+
+I am going to use the **So It Goes** blog to post about Azure, Quantum Computing and Azure Sphere. I am more interested in why things should be done rather than how to do them. Microsoft has great Azure documention but I intend to post additional commentary on some less-known features.
+
+I have been using Azure since it was first released in 2008 so have seen many changes over the years. From 2008 through 2014 I did some Azure blogging at [Convective](https://convective.wordpress.com/), although almost all of these posts are now out of date. I later participated in a team blog with some of my Microsoft peers, but that blog has now been deleted.
+
+There is not much to the title **So It Goes**. The last line of the Samuel Beckett story, Echo's Bones, is *So it goes in the world*. And the chorus of the Nick Lowe song, [So It goes](https://www.youtube.com/watch?v=YEpr8kaczck&feature=emb_logo), states *But where it's goin' no one knows* and that's pretty much where we are.
