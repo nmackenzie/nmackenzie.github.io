@@ -29,8 +29,8 @@ We are going to consider a mathematical system where a general vector has the fo
     |v> = α|0> + β|1> 
 
 where, somewhat unusually, α and β are complex numbers. This system can formally be described as a two-dimensional vector space over the complex numbers. \|0> and \|1> are the basis vectors of this vector space – that is any vector in this vector space can be represented as a linear combination of the two vectors \|0> and \|1> with α and β representing the amount of each basis vector included in the total. Each vector has a length, with the basis vectors \|0> and \|1> defined to be of length 1 and the general vector having a length, L, defined by 
-
-    L² = α*α + β*β
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>L² = α*α + β*β
+</code></pre></div></div>
 
 where α* and β* are the complex conjugates of α and β respectively. 
 
@@ -87,15 +87,18 @@ For the general ket, \|v>, defined as:
 
 we can associate a bra, <v\|, defined as follows: 
 
-    <v| = α*<0| + β*<1| 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><v| = α*<0| + β*<1| 
+</code></pre></div></div>
 
 The motivation for using the complex conjugate when creating the bra is so we get a real number, not a complex number, when we apply a bra to its source ket, as in: 
 
-    α|0> ->  α*<0| 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>α|0> ->  α*<0| 
+</code></pre></div></div>
 
 so that 
 
-    α*α<0|0> = α*α 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>α*α<0|0> = α*α 
+</code></pre></div></div>
 
 For a general ket, v, this makes <v\|v> equal to its squared length. 
 
@@ -210,7 +213,8 @@ In quantum computing the vectors, \|0> and \|1>, are referred to as qubits (quan
 
 Where α and β are complex numbers. This means all the mathematics described above applies unchanged to qubits. A qubit is constrained to be of length 1, so that: 
 
-    1= α*α + β*β
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1 = α*α + β*β
+</code></pre></div></div>
 
 # Observation  
 
@@ -226,7 +230,8 @@ As with classical bits it is possible to combine two or more bits in a sequence.
 
 Where α, β, γ, and δ are complex numbers constrained by: 
 
-    1 = α*α + β*β + γ*γ + δ*δ 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1 = α*α + β*β + γ*γ + δ*δ 
+</code></pre></div></div>
 
 \|00>, \|01>, \|10>, and \|11> form a basis for the vector space of two qubits – that is any 2-qubit state is a linear superposition of these basis states. 
 
@@ -244,7 +249,8 @@ This appears to have the same form as the general qubit. However, it transpires 
 
 with
 
-    1 = α*α + β*β 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1 = α*α + β*β
+</code></pre></div></div>
 
 This qubit cannot be created from the product of two individual qubits and the individual qubits in \|q₁q₀> are deemed to be entangled. The motivation for this is that when we observe the state of this vector we will get the result \|00> with probability α\*α and the result \|11> with probability β\*β. Knowing the observed value of one qubit in the pair, say \|0> we immediately know the value of the other qubit, also \|0> in this example. This means that if we are somehow able to separate the two qubits in the entangled pair we immediately know the value of the second qubit on measuring the first qubit.
 
@@ -340,7 +346,7 @@ Alice and Bob share an entangled pair of qubits, where Alice has the leftmost an
 
 The complete initial state of the system is therefore: 
 
-    (α|0> + β|1>) (|00> + |11>) / √2 
+    (α|0> + β|1>)(|00> + |11>) / √2 
 
 Alice performs a C<sub>NOT</sub> operation on her qubits (the two leftmost qubits) leaving the system as follows: 
 
@@ -348,14 +354,14 @@ Alice performs a C<sub>NOT</sub> operation on her qubits (the two leftmost qubit
 
 Alice performs a Hadamard operation on the leftmost qubit: 
 
-    (α|0> + α|1>) (|00> + |11>) / 2 + (β|0> - β|1>) (|10> + |01>) /2 
+    (α|0> + α|1>)(|00> + |11>) / 2 + (β|0> - β|1>) (|10> + |01>) / 2 
 
 Which gives: 
 
 ```
 α (|000> + |100> + |011> + |111>) / 2 
 
-+ β (|010> -|110> + |001> - |101>) /2 
++ β (|010> -|110> + |001> - |101>) / 2 
 ```
 This can be regrouped on the two leftmost qubits as follows: 
 
