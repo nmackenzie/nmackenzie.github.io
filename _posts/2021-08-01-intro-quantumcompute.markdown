@@ -29,7 +29,7 @@ We are going to consider a mathematical system where a general vector has the fo
     |v> = α|0> + β|1> 
 
 where, somewhat unusually, α and β are complex numbers. This system can formally be described as a two-dimensional vector space over the complex numbers. \|0> and \|1> are the basis vectors of this vector space – that is any vector in this vector space can be represented as a linear combination of the two vectors \|0> and \|1> with α and β representing the amount of each basis vector included in the total. Each vector has a length, with the basis vectors \|0> and \|1> defined to be of length 1 and the general vector having a length, L, defined by 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>L² = α*α + β*β
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>L² = α<sup>∗</sup>α + β<sup>∗</sup>β
 </code></pre></div></div>
 
 where α* and β* are the complex conjugates of α and β respectively. 
