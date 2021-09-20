@@ -32,7 +32,7 @@ where, somewhat unusually, α and β are complex numbers. This system can formal
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>L² = α<sup>∗</sup>α + β<sup>∗</sup>β
 </code></pre></div></div>
 
-where α* and β* are the complex conjugates of α and β respectively. 
+where α<sup>∗</sup> and β<sup>∗</sup> are the complex conjugates of α and β respectively. 
 
 Note that the 0 and 1 in \|0> and \|1> are labels with no other meaning. They could be replaced by \|u> and \|d>, for example, and our analysis would proceed unchanged. However, using \|0> and \|1> allows the simple extension of the classical bit as well as, in more advanced cases, mathematical tricks relying on the labels being the numbers 0 and 1. 
 
@@ -87,17 +87,17 @@ For the general ket, \|v>, defined as:
 
 we can associate a bra, <v\|, defined as follows: 
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><v| = α*<0| + β*<1| 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><v| = α<sup>∗</sup><0| + β<sup>∗</sup><1| 
 </code></pre></div></div>
 
 The motivation for using the complex conjugate when creating the bra is so we get a real number, not a complex number, when we apply a bra to its source ket, as in: 
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>α|0> ->  α*<0| 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>α|0> ->  α<sup>∗</sup><0| 
 </code></pre></div></div>
 
 so that 
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>α*α<0|0> = α*α 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>α<sup>∗</sup>α<0|0> = α<sup>∗</sup>α 
 </code></pre></div></div>
 
 For a general ket, v, this makes <v\|v> equal to its squared length. 
@@ -213,14 +213,14 @@ In quantum computing the vectors, \|0> and \|1>, are referred to as qubits (quan
 
 Where α and β are complex numbers. This means all the mathematics described above applies unchanged to qubits. A qubit is constrained to be of length 1, so that: 
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1 = α*α + β*β
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1 = α<sup>∗</sup>α + β<sup>∗</sup>β
 </code></pre></div></div>
 
 # Observation  
 
 In classical computing when we observe a bit the result is always either 0 or 1. What do we observe when we measure the state of the general qubit? If the qubit is in the state \|0> or \|1> it seems reasonable to assume we would observe it to be in that pure state when we measure it. If the qubit is in the state i\|0> or i\|1> it similarly seems reasonable to assume it would also be in that pure state when we measure it, although doubt remains about the significance of the i since we cannot observe imaginary or complex numbers. 
 
-Assumption. When we measure the state of the general qubit, α\|0> + β\|1>, we will observe it to be either \|0> or \|1> with probability α\*α or β\*β respectively. This observational probability is the core assumption of quantum computing. This assumption is consistent with the reasonableness criteria and length constraints.
+Assumption. When we measure the state of the general qubit, α\|0> + β\|1>, we will observe it to be either \|0> or \|1> with probability α<sup>∗</sup>α or β<sup>∗</sup>β respectively. This observational probability is the core assumption of quantum computing. This assumption is consistent with the reasonableness criteria and length constraints.
 
 # Entanglement 
 
@@ -230,7 +230,7 @@ As with classical bits it is possible to combine two or more bits in a sequence.
 
 Where α, β, γ, and δ are complex numbers constrained by: 
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1 = α*α + β*β + γ*γ + δ*δ 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1 = α<sup>∗</sup>α + β<sup>∗</sup>β + γ<sup>∗</sup>γ + δ<sup>∗</sup>δ 
 </code></pre></div></div>
 
 \|00>, \|01>, \|10>, and \|11> form a basis for the vector space of two qubits – that is any 2-qubit state is a linear superposition of these basis states. 
@@ -249,10 +249,10 @@ This appears to have the same form as the general qubit. However, it transpires 
 
 with
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1 = α*α + β*β
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1 = α<sup>∗</sup>α + β<sup>∗</sup>β
 </code></pre></div></div>
 
-This qubit cannot be created from the product of two individual qubits and the individual qubits in \|q₁q₀> are deemed to be entangled. The motivation for this is that when we observe the state of this vector we will get the result \|00> with probability α\*α and the result \|11> with probability β\*β. Knowing the observed value of one qubit in the pair, say \|0> we immediately know the value of the other qubit, also \|0> in this example. This means that if we are somehow able to separate the two qubits in the entangled pair we immediately know the value of the second qubit on measuring the first qubit.
+This qubit cannot be created from the product of two individual qubits and the individual qubits in \|q₁q₀> are deemed to be entangled. The motivation for this is that when we observe the state of this vector we will get the result \|00> with probability α<sup>∗</sup>α and the result \|11> with probability β<sup>∗</sup>β. Knowing the observed value of one qubit in the pair, say \|0> we immediately know the value of the other qubit, also \|0> in this example. This means that if we are somehow able to separate the two qubits in the entangled pair we immediately know the value of the second qubit on measuring the first qubit.
 
 # Operations on Multiple Qubits 
 
@@ -384,7 +384,7 @@ Alice has | Bob does operation
 \|01> | X 
 \|11> | ZX 
 
-After performing the operation and observing the qubit, Bob's qubit will be in the desired state - the one that Alice started with. Of course, when Bob measures that qubit he will find it to be in the state \|0> or \|1> with probabilities α\*α or β\*β respectively.
+After performing the operation and observing the qubit, Bob's qubit will be in the desired state - the one that Alice started with. Of course, when Bob measures that qubit he will find it to be in the state \|0> or \|1> with probabilities α<sup>∗</sup>α or β<sup>∗</sup>β respectively.
 
 # Challenge of Quantum Computing 
 
