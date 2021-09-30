@@ -7,6 +7,8 @@ img: azure-blur3.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [Azure, Virtual Machines, IaaS]
 ---
+(Updated 9/29/2021)
+
 The hosting of VMs is a core Azure service. Azure provides several abstractions constraining the placement of VMs from anywhere in a geographic region to a specific physical host.  This post describes the following placement constraints: 
 
 * Regions
