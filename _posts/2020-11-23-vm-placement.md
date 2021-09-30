@@ -61,6 +61,8 @@ A [Virtual Machine Scale Set](https://docs.microsoft.com/en-us/azure/virtual-mac
 
 The VMSS instances are deployed into [fault domains](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-manage-fault-domains) and update domains. For regions with no Availability Zones there are five fault domains by default. If the VMSS is deployed into Availability Zones, Azure distributes the instances over as many fault domains as possible.
 
+[VMSS Flexible Mode Orchestration](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-orchestration-modes#scale-sets-with-flexible-orchestration) is a preview service which facilitates the deployment of a scale set containing either identical VMs or multiple VM types. With Flexible Orchestration the VMs in the scale set can be deployed using the same APIs used to deploy standard VMs.
+
 # Dedicated Hosts
 
 A [Dedicated Host](https://docs.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts) is an Azure resource representing a deployment location mapped to an entire physical host. Customers can deploy one or more VMs into that Dedicated Host so that the VMs are completely isolated from those of other customers and have lower latency between VMs. This isolation may be desired for compliance or regulatory reasons. Dedicated Hosts are supported for a limited set of VM families.
