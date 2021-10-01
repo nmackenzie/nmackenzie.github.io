@@ -261,7 +261,7 @@ We can perform operations on multiple qubits. For example, designating the right
 ```
 X₁Z₀|00> = |10> 
 
-X₀Z₁|11> = -|01> 
+X₀Z₁|11> = -|10> 
 ```
 
 We can also introduce operations on multiple qubits. There is a class of two-qubit operators in which the leftmost qubit controls whether an operation is applied to the rightmost qubit. A controlled-NOT (C<sub>NOT</sub>) applies a NOT operator (X) to the rightmost qubit when the left qubit is \|1> and otherwise makes no change. The C<sub>NOT</sub> is defined as follows: 
