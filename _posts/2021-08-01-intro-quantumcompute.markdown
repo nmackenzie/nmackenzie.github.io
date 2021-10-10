@@ -5,7 +5,7 @@ date: 2021-08-01 14:00:00 +0700
 description: Introduction to Quantum Computing. # Add post description (optional)
 img: bricks.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [Blog]
+tags: [Quantum Computing]
 ---
 Quantum computing is a novel form of computing which may revolutionize our ability to perform certain types of calculation which are beyond the reach of traditional classical computers. Several companies are actively developing hardware with the goal of natively performing quantum algorithms. There is significant research in developing novel quantum computing algorithms for areas such as cryptography, quantum simulation and machine learning. 
 
