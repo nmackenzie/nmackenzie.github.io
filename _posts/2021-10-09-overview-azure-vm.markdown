@@ -68,6 +68,9 @@ Azure provides three distinct families of VMs containing GPUs: NC optimized for 
 ### Burstable
 The [B](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-b-series-burstable) series provides a cost-effective way to host workloads which only occasionally require more power. They have a baseline performance during which credits are built up which can then be burnt down during periods when the VM requires higher performance.
 
+### Confidential Computing
+The [DCsv2](https://docs.microsoft.com/en-us/azure/virtual-machines/dcv2-series) series supports [confidential computing](https://docs.microsoft.com/en-us/azure/confidential-computing/overview) through Intel® Software Guard Extensions, which enable the use of secure enclaves for protection. The DCsv2 series provides security capabilities desired by the financial services and healthcare industries.
+
 ### Constrained
 Some high-memory series support the concept of [constrained vCPU](https://docs.microsoft.com/en-us/azure/virtual-machines/constrained-vcpu), which means that only one quarter or one half of the configured vCPUs are exposed to the VM. The intent of these series is to provide the high memory of the configured VM but with a reduced vCPU count to minimize licensing costs for any software licensed by core count which is to be installed on the VM. For example, the E64-16s_v4 is identical to the E64s_v4 except that it has only 16 vCPUs instead of 64 vCPUs. The Azure price is the same in both cases. 
 
