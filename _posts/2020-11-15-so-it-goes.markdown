@@ -7,7 +7,7 @@ img: clouds-1280.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [Blog]
 ---
-I am a Cloud Solution Architect at Microsoft. In that role I help customers be successful in their use of Microsoft Azure. The technologies I am mainly focused on are the core infrastructure services: Compute, Storage and Networking.
+I am a Cloud Solution Architect at Microsoft. In that role I help retail customers be successful in their use of Microsoft Azure. The technologies I am mainly focused on are the core infrastructure services: Compute, Storage and Networking.
 
 I use the **So It Goes** blog to post about Azure, Quantum Computing and Azure Sphere. I am more interested in why things should be done rather than how to do them. Microsoft has great Azure documention but I intend to post additional commentary on some less-known features.
 
