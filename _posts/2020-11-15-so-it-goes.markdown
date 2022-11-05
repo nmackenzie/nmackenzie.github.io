@@ -1,7 +1,7 @@
 ---
 layout: post
 title: So It Goes
-date: 2020-11-15 15:00:00 +0800
+date: 2022-11-05 14:40:00 +0800
 description: Introductory post for the So It Goes blog. # Add post description (optional)
 img: clouds-1280.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
